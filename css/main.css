@@ -55,7 +55,7 @@
     height: 600px;
     background-color: #29a76d;
     border-radius: 0px 0px 40px 0px;
-    z-index: 990; }
+    z-index: 999; }
   .position-left {
     width: 150px; }
     .off-canvas ul {
@@ -87,6 +87,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
+  #homeimage {
+    display: none; }
   #home #homearticle_mt {
     text-align: center;
     text-transform: uppercase;
@@ -142,8 +144,7 @@
   background-color: #fff;
   margin: 0px;
   padding-top: 100px;
-  position: relative;
-  z-index: 980; }
+  position: relative;}
   .section_container article {
     text-align: center;
     color: #112032;
@@ -184,6 +185,9 @@
       border-radius: 10px;
       margin: 0 auto;
       padding: 15px; }
+      .link_box_mobile:before,
+      .link_box_mobile:after {
+        color: #fff; }
       .link_box_mobile img {
         width: 15px;
         height: 15px;
@@ -388,6 +392,8 @@
       color: #fff;
       display: block;
       line-height: 30px; }
+      .footerlinks ul li a:after {
+        color: #fff; }
     #podcasthost img {
       width: 100px;
       margin: 0 auto; }
@@ -529,8 +535,8 @@
     text-transform: uppercase;
     color: #28B56D;
     margin-top: -15px; }
-    .blogcontainer .ion-settings {
-      font-size: 100px;
+    .blogcontainer img {
+      height: 100px;
       color: #28B56D; }
 /*** Blog Page: Ends ***/
 
@@ -557,8 +563,8 @@
     text-transform: uppercase;
     color: #28B56D;
     margin-top: -15px; }
-    .eventscontainer .ion-settings {
-      font-size: 100px;
+    .eventscontainer img {
+      height: 100px;
       color: #28B56D; }
 /*** Events Page: Ends ***/
 
@@ -794,6 +800,7 @@ and (min-width: 1200px) {
   background-image: none;
   height: 100%; }
   #homeimage {
+    display: inherit;
     height: 100vh;
     width: 100vw;
     background-image: url('../images/homeimage_desktop2.jpg');
